@@ -58,7 +58,7 @@ O jogo original foi criado por **Ivan Alcaide Ferrer** usando o **GameMaker**.
 
 - Um portátil compatível com PortMaster
 - PortMaster instalado e atualizado
-- APK Android de **Climb! A Mountain in Your Pocket**, versão **6.0.7**, obtido legalmente
+- Uma cópia Android de **Climb! A Mountain in Your Pocket**, versão **6.0.7**, em formato APK, XAPK ou ZIP, obtida legalmente
 - Espaço livre suficiente para o port e os dados do jogo
 
 ## Instalação
@@ -69,65 +69,63 @@ Baixe o pacote mais recente na seção **Releases** deste repositório. Extraia 
 
 > Baixar este repositório não fornece o jogo. O pacote contém somente os arquivos criados ou distribuídos para compatibilidade com o PortMaster.
 
-### 2. Forneça seu próprio APK
+### 2. Obtenha a versão correta do jogo
 
-Obtenha legalmente o APK Android de **Climb! A Mountain in Your Pocket, versão 6.0.7**.
+Obtenha legalmente a versão Android **6.0.7** de **Climb! A Mountain in Your Pocket**. O instalador automático aceita os seguintes formatos:
 
-- O APK não está incluído no repositório ou no pacote do port.
-- Este projeto não fornece links não oficiais para o APK.
-- Não publique nem anexe o APK em commits, Issues ou Releases.
+```text
+.apk
+.xapk
+.zip
+```
+
+- O jogo não está incluído no repositório ou no pacote do port.
+- Este projeto não fornece links não oficiais para os arquivos do jogo.
+- Não publique nem anexe APK, XAPK ou ZIP do jogo em commits, Issues ou Releases.
 - Outras versões podem não funcionar com este port.
 
-### 3. Renomeie o APK
+### 3. Coloque o arquivo em `gamedata`
 
-Ative a exibição das extensões de arquivo no computador e renomeie o APK exatamente para:
-
-```text
-climb64.apk
-```
-
-O nome deve estar em letras minúsculas. Verifique se o Windows não criou acidentalmente `climb64.apk.apk`.
-
-### 4. Copie o APK para `gamedata`
-
-Copie `climb64.apk` para:
+Copie o APK, XAPK ou ZIP da versão **6.0.7** para:
 
 ```text
-climb_amy/gamedata/
+ports/climb_amy/gamedata/
 ```
 
-O caminho completo precisa ser:
+Você não precisa extrair nem renomear o arquivo. Ele pode manter o nome original.
 
-```text
-ports/climb_amy/gamedata/climb64.apk
-```
-
-Não extraia o APK e não o coloque ao lado do script de inicialização.
-
-### 5. Confira a estrutura
+Exemplo:
 
 ```text
 ports/
 ├── climb_amy/
 │   ├── gamedata/
-│   │   └── climb64.apk
+│   │   └── arquivo-do-jogo.xapk
 │   ├── libs/
 │   └── controls.gptk
 └── Climb! AMiYP.sh
 ```
 
-### 6. Inicie o jogo
+> Mantenha apenas um pacote do jogo dentro de `gamedata` durante a instalação.
 
-Ejete o cartão SD com segurança, insira-o no portátil e abra **Climb! A Mountain in Your Pocket** na seção Ports. A primeira inicialização pode levar um pouco mais de tempo.
+### 4. Inicie o jogo
 
-Se o jogo retornar imediatamente ao menu, confira:
+Ejete o cartão SD com segurança, insira-o no portátil e abra **Climb! A Mountain in Your Pocket** na seção Ports.
 
-- se a pasta se chama exatamente `climb_amy`;
-- se a subpasta se chama exatamente `gamedata`;
-- se o arquivo se chama exatamente `climb64.apk`;
-- se o APK corresponde à versão `6.0.7`;
-- se o APK não foi extraído nem deixado dentro de ZIP/XAPK;
-- se todo o pacote foi extraído na pasta `ports`.
+Na primeira inicialização, o port localizará automaticamente o arquivo dentro de `gamedata`, fará a extração, selecionará os dados necessários e preparará o jogo. Ao terminar, o jogo será aberto automaticamente.
+
+A primeira inicialização pode demorar mais do que as seguintes. Não desligue o aparelho durante a extração.
+
+Nas próximas vezes, o jogo abrirá normalmente sem repetir todo o processo.
+
+Se o jogo retornar ao menu, confira:
+
+- se o pacote está dentro de `ports/climb_amy/gamedata/`;
+- se o arquivo é APK, XAPK ou ZIP;
+- se o jogo corresponde à versão Android `6.0.7`;
+- se existe apenas um pacote do jogo dentro de `gamedata`;
+- se o arquivo terminou de ser copiado e não está corrompido;
+- se todo o pacote do port foi extraído corretamente na pasta `ports`.
 
 ## Controles
 
@@ -154,9 +152,10 @@ O jogo utiliza ações separadas para as mãos esquerda e direita. Segure o bot�
 
 ### O jogo retorna ao menu
 
-- Confirme que existe `ports/climb_amy/gamedata/climb64.apk`.
-- Confirme que o APK é a versão Android `6.0.7` e não foi extraído.
-- Verifique se o arquivo não foi nomeado `climb64.apk.apk`.
+- Confirme que existe um APK, XAPK ou ZIP dentro de `ports/climb_amy/gamedata/`.
+- Confirme que o arquivo corresponde à versão Android `6.0.7`.
+- Remova pacotes duplicados e mantenha somente um arquivo do jogo em `gamedata`.
+- Copie o pacote novamente caso ele esteja incompleto ou corrompido.
 - Atualize o PortMaster e seus runtimes.
 - Consulte o log gerado após tentar iniciar o port.
 
@@ -242,7 +241,7 @@ The original game was created by **Ivan Alcaide Ferrer** using **GameMaker**.
 
 - A PortMaster-compatible handheld
 - PortMaster installed and updated
-- A legally obtained Android APK of **Climb! A Mountain in Your Pocket**, specifically version **6.0.7**
+- A legally obtained Android copy of **Climb! A Mountain in Your Pocket**, version **6.0.7**, in APK, XAPK, or ZIP format
 - Enough free storage for the port and the required game data
 
 ## Installation
@@ -253,65 +252,63 @@ Download the latest port package from this repository's **Releases** page. Extra
 
 > Downloading this repository does **not** provide the game itself. The port package contains only files created or distributed for PortMaster compatibility.
 
-### 2. Provide your own game APK
+### 2. Obtain the correct game version
 
-Obtain your own legal copy of **Climb! A Mountain in Your Pocket for Android, version 6.0.7**.
+Legally obtain the Android version **6.0.7** of **Climb! A Mountain in Your Pocket**. The automatic installer accepts:
 
-- The APK is not included in this repository or port package.
-- This project does not provide unofficial APK download links.
-- Do not upload or attach the APK to commits, Issues, or Releases.
+```text
+.apk
+.xapk
+.zip
+```
+
+- The game is not included in this repository or port package.
+- This project does not provide unofficial links to game files.
+- Do not upload or attach the game's APK, XAPK, or ZIP to commits, Issues, or Releases.
 - Other game versions may not work with this port.
 
-### 3. Rename the APK
+### 3. Place the file in `gamedata`
 
-Make file extensions visible on your computer and rename the APK exactly to:
-
-```text
-climb64.apk
-```
-
-The filename must be lowercase. Make sure Windows did not create `climb64.apk.apk`.
-
-### 4. Copy the APK into `gamedata`
-
-Copy `climb64.apk` into:
+Copy the version **6.0.7** APK, XAPK, or ZIP into:
 
 ```text
-climb_amy/gamedata/
+ports/climb_amy/gamedata/
 ```
 
-The complete path must be:
+You do not need to extract or rename the file. It may keep its original filename.
 
-```text
-ports/climb_amy/gamedata/climb64.apk
-```
-
-Do not extract the APK or place it beside the launcher script.
-
-### 5. Check the final structure
+Example:
 
 ```text
 ports/
 ├── climb_amy/
 │   ├── gamedata/
-│   │   └── climb64.apk
+│   │   └── game-package.xapk
 │   ├── libs/
 │   └── controls.gptk
 └── Climb! AMiYP.sh
 ```
 
-### 6. Launch the game
+> Keep only one game package inside `gamedata` during installation.
 
-Safely eject the SD card, insert it into the handheld, and start **Climb! A Mountain in Your Pocket** from the Ports section. The first launch may take a little longer.
+### 4. Launch the game
+
+Safely eject the SD card, insert it into your handheld, and start **Climb! A Mountain in Your Pocket** from the Ports section.
+
+On the first launch, the port will automatically locate the file inside `gamedata`, extract it, select the required data, and prepare the game. The game will open automatically when the process is complete.
+
+The first launch may take longer than subsequent launches. Do not turn off the device during extraction.
+
+After the initial setup, the game will start normally without repeating the full process.
 
 If the game returns immediately to the menu, check:
 
-- the folder is named exactly `climb_amy`;
-- the subfolder is named exactly `gamedata`;
-- the file is named exactly `climb64.apk`;
-- the APK is version `6.0.7`;
-- the APK was not extracted or left inside a ZIP/XAPK;
-- the complete port package was extracted into `ports`.
+- the package is inside `ports/climb_amy/gamedata/`;
+- the file is an APK, XAPK, or ZIP;
+- the game is Android version `6.0.7`;
+- only one game package is present inside `gamedata`;
+- the file finished copying and is not corrupted;
+- the complete port package was correctly extracted into `ports`.
 
 ## Controls
 
@@ -338,9 +335,10 @@ The game uses separate actions for the climber's left and right hands. Hold a ha
 
 ### The game returns to the menu
 
-- Confirm that `ports/climb_amy/gamedata/climb64.apk` exists.
-- Confirm that it is Android version `6.0.7` and was not extracted.
-- Check that the file was not accidentally named `climb64.apk.apk`.
+- Confirm that an APK, XAPK, or ZIP exists inside `ports/climb_amy/gamedata/`.
+- Confirm that the file is the Android version `6.0.7`.
+- Remove duplicate packages and keep only one game file in `gamedata`.
+- Copy the package again if it is incomplete or corrupted.
 - Update PortMaster and its runtimes.
 - Check the log generated after attempting to launch the port.
 
