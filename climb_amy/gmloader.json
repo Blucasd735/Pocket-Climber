@@ -1,6 +1,6 @@
 {
   "save_dir": "gamedata/saves",
-  "apk_path": "gamedata/climb64.apk",
+  "apk_path": "gamedata/runtime.apk",
   "shader_dir": "./shaders/",
   "show_cursor": false,
   "disable_controller": false,

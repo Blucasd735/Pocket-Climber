@@ -30,6 +30,19 @@ export LD_LIBRARY_PATH="$GAMEDIR/lib:$GAMEDIR/lib/arm64-v8a:$LD_LIBRARY_PATH"
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 chmod +x "$GAMEDIR/gmloadernext.aarch64"
 
+# GMLOADER_NXEXTRACT_BEGIN
+chmod +x "$GAMEDIR/run-extractor.sh" "$GAMEDIR/nxextract.py" \
+  "$GAMEDIR/nxextract-ui" "$GAMEDIR/tools/prepare_gmloader_runtime.py" \
+  "$GAMEDIR/tools/source_guard.py" 2>/dev/null || true
+if ! "$GAMEDIR/run-extractor.sh"; then
+  printf 'ERRO: falha ao preparar APK/XAPK em gamedata. Veja nxextract.log.\n' \
+    > "${CUR_TTY:-/dev/tty0}" 2>/dev/null || true
+  sleep 6
+  pm_finish 2>/dev/null || true
+  exit 1
+fi
+# GMLOADER_NXEXTRACT_END
+
 $GPTOKEYB "gmloadernext.aarch64" &
 pm_platform_helper "gmloadernext.aarch64"
 "$GAMEDIR/gmloadernext.aarch64" -c "$GAMEDIR/gmloader.json"

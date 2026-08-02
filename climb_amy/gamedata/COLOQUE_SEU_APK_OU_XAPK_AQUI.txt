@@ -1,0 +1,21 @@
+PORTUGUÊS
+
+Coloque nesta pasta o arquivo original do jogo.
+
+Formatos aceitos: APK, XAPK, APKM, APKS e ZIP.
+O arquivo pode ter qualquer nome.
+
+Depois, inicie o port normalmente. O jogo será preparado automaticamente na primeira execução.
+
+Use apenas arquivos obtidos legalmente. Não coloque mais de uma versão do jogo nesta pasta.
+
+ENGLISH
+
+Place your original game file in this folder.
+
+Supported formats: APK, XAPK, APKM, APKS, and ZIP.
+The file can have any name.
+
+Then launch the port normally. The game will be prepared automatically on the first run.
+
+Only use legally obtained files. Do not place multiple game versions in this folder.
