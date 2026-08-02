@@ -21,6 +21,14 @@ An unofficial PortMaster port of the Android release of **Climb! A Mountain in Y
 
 **Climb! A Mountain in Your Pocket** is a challenging climbing game with controls that are easy to learn and difficult to master. Control each hand independently, swing from the rocks, use your momentum to jump, manage your stamina, and find a safe route toward the summit.
 
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.IvanAF.ClimbAMIYPfree">
+    <img src="https://play-lh.googleusercontent.com/mhu3d320uJKZWnxMcenRkuwexh5Xm1MeVKSgjRTw_JK7fWTJ2Mjnsr9Ta-VgJOuslHiWY4NOCwgU4_5UWoFI1A8=w1052-h592" alt="Climb! A Mountain in Your Pocket gameplay" width="760">
+  </a>
+  <br>
+  <sub>Official gameplay screenshot — click the image to visit the game on Google Play.</sub>
+</p>
+
 The original game was created by **Ivan Alcaide Ferrer** using **GameMaker**.
 
 - [Official Google Play page](https://play.google.com/store/apps/details?id=com.IvanAF.ClimbAMIYPfree)
@@ -30,7 +38,7 @@ The original game was created by **Ivan Alcaide Ferrer** using **GameMaker**.
 
 - Android GameMaker release running on Linux through GMLoader
 - Designed for PortMaster-compatible ARM handhelds
-- Tested on R36S with ArkOS and Mali-450 graphics
+- Tested on R36S with ArkOS, RK3326 processor, and Mali-G31 MP2 graphics
 - Handheld controls supported
 - No proprietary game data included
 - Save data is stored separately from the original game files
@@ -141,7 +149,7 @@ The game uses separate actions for the climber's left and right hands. Hold a ha
 | Device / system | Status |
 | --- | --- |
 | R36S + ArkOS | Tested |
-| Mali-450 GPU | Tested |
+| RK3326 + Mali-G31 MP2 | Tested |
 | Other PortMaster ARM devices | May work; testing is welcome |
 
 Compatibility with an unlisted device is not guaranteed. When reporting a problem, include the handheld model, operating system, PortMaster version, and the complete runtime log.
