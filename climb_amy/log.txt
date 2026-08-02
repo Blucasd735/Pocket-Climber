@@ -1,0 +1,180 @@
+Setting video mode 640x480.
+Initializing OpenGL funcs...
+Opening gamedata/climb.apk...
+Creating zip handle...
+Inflating lib/armeabi-v7a/libc++_shared.so...
+Loading runner elf lib/armeabi-v7a/libc++_shared.so (0xf0852008, 558988 bytes)...
+loading section 0/8...
+loading section 1/8...
+code cave: 3440 bytes (@0x00093290).
+loading section 2/8...
+loading section 3/8...
+loading section 4/8...
+loading section 5/8...
+loading section 6/8...
+loading section 7/8...
+platform/common/so_util.c:536: Missing: strtoimax
+platform/common/so_util.c:536: Missing: strtoumax
+Missing: strcoll
+Missing: strxfrm
+Missing: wcscoll
+Missing: wcsxfrm
+Missing: iswspace
+Missing: iswprint
+Missing: iswcntrl
+Missing: iswalpha
+Missing: iswdigit
+Missing: iswpunct
+Missing: iswxdigit
+Missing: vsscanf
+Missing: btowc
+Missing: wctob
+Missing: mbrlen
+Missing: pthread_mutex_trylock
+Missing: sched_yield
+Missing: pthread_self
+Missing: pthread_equal
+Missing: open
+Missing: close
+Missing: read
+Missing: strerror_r
+Missing: pthread_detach
+Missing: __assert2
+Missing: dladdr
+Inflating lib/armeabi-v7a/libyoyo.so...
+Loading runner elf lib/armeabi-v7a/libyoyo.so (0xf0249008, 6195300 bytes)...
+loading section 0/7...
+loading section 1/7...
+loading section 2/7...
+code cave: 3788 bytes (@0x40507134).
+loading section 3/7...
+loading section 4/7...
+loading section 5/7...
+loading section 6/7...
+platform/common/so_util.c:536: Missing: __page_size
+Missing: pthread_attr_init
+Missing: pthread_attr_setstacksize
+Missing: pthread_attr_destroy
+Missing: __isfinitef
+Missing: sigprocmask
+Missing: syscall
+Missing: _exit
+Missing: lseek
+Missing: ftruncate
+Missing: rename
+Missing: sched_yield
+Missing: __android_log_write
+Missing: tmpfile
+Missing: perror
+Missing: uname
+Missing: select
+Missing: getpeername
+Missing: shutdown
+Missing: close
+Missing: getsockopt
+Missing: setsockopt
+Missing: socket
+Missing: ioctl
+Missing: bind
+Missing: listen
+Missing: accept
+Missing: recvfrom
+Missing: inet_ntoa
+Missing: recv
+Missing: send
+Missing: inet_addr
+Missing: getaddrinfo
+Missing: fcntl
+Missing: connect
+Missing: sendto
+Missing: mkstemp
+Missing: fdopen
+Missing: localtime
+Missing: zError
+Missing: fstat
+Missing: munmap
+Missing: mmap
+Missing: __assert2
+Applying port specific patches...
+Patching LoadTextureFromPNG to variant #3
+Unable to find method `ExpandCompressedFile` (aka: 'Java_com_yoyogames_runner_RunnerJNILib_ExpandCompressedFile') for 'RunnerJNILib'.
+LOG[yoyo]: RenderSplashCheck1.1LOG[yoyo]: RenderSplashCheck1.2LOG[yoyo]: RenderSplashCheck1.3LOG[yoyo]: RenderSplashCheck1.4LOG[yoyo]: RenderSplashCheck1.6LOG[yoyo]: RenderSplashCheck1.7Class RunnerJNILib does not have method OpenURL.
+Class RunnerJNILib does not have method SendHighScore.
+Class RunnerJNILib does not have method SendAchievement.
+Class RunnerJNILib does not have method IncrementAchievement.
+Class RunnerJNILib does not have method OpenAchievements.
+Class RunnerJNILib does not have method OpenLeaderboards.
+Class RunnerJNILib does not have method AchievementLoadFriends.
+Class RunnerJNILib does not have method AchievementLoadLeaderboard.
+Class RunnerJNILib does not have method CallExtensionFunction.
+Class RunnerJNILib does not have method AchievementLoadPic.
+Class RunnerJNILib does not have method AchievementShow.
+Class RunnerJNILib does not have method AchievementEvent.
+Class RunnerJNILib does not have method AchievementGetInfo.
+Class RunnerJNILib does not have method AchievementLogin.
+Class RunnerJNILib does not have method AchievementLoginStatus.
+Class RunnerJNILib does not have method AchievementLogout.
+Class RunnerJNILib does not have method EnableAds.
+Class RunnerJNILib does not have method MoveAds.
+Class RunnerJNILib does not have method AdsSetup.
+Class RunnerJNILib does not have method AdsRewardCallback.
+Class RunnerJNILib does not have method AdsEngagementLaunch.
+Class RunnerJNILib does not have method PocketChangeDisplayShop.
+Class RunnerJNILib does not have method PocketChangeDisplayReward.
+Class RunnerJNILib does not have method PlayHavenUpdateNotificationBadge.
+Class RunnerJNILib does not have method PlayHavenHideNotificationBadge.
+Class RunnerJNILib does not have method PlayHavenAddNotificationBadge.
+Class RunnerJNILib does not have method PlayHavenPositionNotificationBadge.
+Class RunnerJNILib does not have method AdsEngagementActive.
+Class RunnerJNILib does not have method AdsEngagementAvailable.
+Class RunnerJNILib does not have method AdsInterstitialDisplay.
+Class RunnerJNILib does not have method AdsInterstitialAvailable.
+Class RunnerJNILib does not have method DisableAds.
+Class RunnerJNILib does not have method AdsEvent.
+Class RunnerJNILib does not have method AdsEventPreload.
+Class RunnerJNILib does not have method AdsDisplayWidth.
+Class RunnerJNILib does not have method AdsDisplayHeight.
+Class RunnerJNILib does not have method LeaveRating.
+Class RunnerJNILib does not have method EnableInAppBilling.
+Class RunnerJNILib does not have method RestoreInAppPurchases.
+Class RunnerJNILib does not have method AcquireInAppPurchase.
+Class RunnerJNILib does not have method ConsumeInAppPurchase.
+Class RunnerJNILib does not have method GetInAppPurchaseDetail.
+Class RunnerJNILib does not have method FacebookInit.
+Class RunnerJNILib does not have method FacebookLogin.
+Class RunnerJNILib does not have method FacebookAccessToken.
+Class RunnerJNILib does not have method FacebookUserId.
+Class RunnerJNILib does not have method FacebookGraphRequest.
+Class RunnerJNILib does not have method FacebookDialog.
+Class RunnerJNILib does not have method FacebookInviteDialog.
+Class RunnerJNILib does not have method FacebookLogout.
+Class RunnerJNILib does not have method FacebookLoginStatus.
+Class RunnerJNILib does not have method FacebookCheckPermission.
+Class RunnerJNILib does not have method FacebookRequestPermissions.
+Class RunnerJNILib does not have method HttpGet.
+Class RunnerJNILib does not have method HttpPost.
+Class RunnerJNILib does not have method HttpRequest.
+Class RunnerJNILib does not have method PlayMP3.
+Class RunnerJNILib does not have method ShowMessage.
+Class RunnerJNILib does not have method InputString.
+Class RunnerJNILib does not have method ShowQuestion.
+Class RunnerJNILib does not have method ShowMessageAsync.
+Class RunnerJNILib does not have method InputStringAsync.
+Class RunnerJNILib does not have method ShowQuestionAsync.
+Class RunnerJNILib does not have method ShowLogin.
+Class RunnerJNILib does not have method RestrictOrientation.
+Class RunnerJNILib does not have method isNetworkConnected.
+Class RunnerJNILib does not have method powersaveEnable.
+Class RunnerJNILib does not have method analyticsEvent.
+Class RunnerJNILib does not have method analyticsEventExt.
+Class RunnerJNILib does not have method cloudStringSave.
+Class RunnerJNILib does not have method cloudSynchronise.
+Class RunnerJNILib does not have method DumpUsedMemory.
+Class RunnerJNILib does not have method PushLocalNotification.
+Class RunnerJNILib does not have method PushGetLocalNotification.
+Class RunnerJNILib does not have method PushCancelLocalNotification.
+Class RunnerJNILib does not have method GetUDID.
+/roms/ports/Climb.sh: line 39: 354909 Segmentation fault      ./gmloader gamedata/climb.apk
+/opt/system/Tools/PortMaster/funcs.txt: line 140: 354908 Killed                  $GPTOKEYB "gmloader"
+/opt/system/Tools/PortMaster/funcs.txt: line 140: 354932 Killed                  $ESUDO pkill -9 -f gptokeyb
+/opt/system/Tools/PortMaster/funcs.txt: line 140: 354939 Killed                  $ESUDO pkill -9 -f gptokeyb2
